@@ -14,6 +14,9 @@ public class Task03 {
         String[] arr = str.toLowerCase().split("");
         String[] arr1 = new String[arr.length];
         System.out.println(Arrays.toString(arr));
+
+        var s = System.currentTimeMillis();
+
         int j = 0;
         for (int i = arr.length - 1; i >= 0; i--) {
             arr1[j] = arr[i];
@@ -26,6 +29,7 @@ public class Task03 {
                 count++;
             }
         }
+        System.out.printf("Время -> %s mc\n", System.currentTimeMillis() - s);
         System.out.printf("%s -> %s", str, count == arr.length - 1 ? "Является полиндромом" : "Не является полиндромом");
     }
 }

@@ -9,6 +9,7 @@ import java.io.IOException;
 //простой текстовый файл, обработайте исключения.
 public class Task04 {
     public static void main(String[] args) throws IOException {
+        var t = System.currentTimeMillis();
         int num = 100;
         String s = "Test\t";
         File file = new File("Task04.txt");
@@ -18,6 +19,7 @@ public class Task04 {
                 fileWriter.write(date);
                 fileWriter.flush();
             }
+            System.out.printf("Время -> %s mc\n", System.currentTimeMillis() - t);
         }
     }
 }
