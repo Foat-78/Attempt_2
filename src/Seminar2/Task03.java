@@ -13,13 +13,13 @@ public class Task03 {
         String str = scanner.nextLine();
         String[] arr = str.toLowerCase().split("");
         String[] arr1 = new String[arr.length];
-//        System.out.println(Arrays.toString(arr));
+        System.out.println(Arrays.toString(arr));
         int j = 0;
         for (int i = arr.length - 1; i >= 0; i--) {
             arr1[j] = arr[i];
             j++;
         }
-//        System.out.println(Arrays.toString(arr1));
+        System.out.println(Arrays.toString(arr1));
         int count = 0;
         for (int i = 0; i < arr.length - 1; i++) {
             if (arr[i].equals(arr1[i])){
