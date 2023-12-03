@@ -20,7 +20,6 @@ public class Task03 {
             j++;
         }
 //        System.out.println(Arrays.toString(arr1));
-
         int count = 0;
         for (int i = 0; i < arr.length - 1; i++) {
             if (arr[i].equals(arr1[i])){
