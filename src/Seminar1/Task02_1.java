@@ -5,10 +5,8 @@ package Seminar1;
 // "Добрый вечер, <Имя>!", если время от 18:00 до 22:59;
 // "Доброй ночи, <Имя>!", если время от 23:00 до 4:59
 
-
 import java.time.LocalTime;
 import java.util.Scanner;
-
 public class Task02_1 {
     public static void main(String[] args) {
         System.out.print("Введите имя: ");
