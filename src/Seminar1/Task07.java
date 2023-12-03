@@ -11,7 +11,7 @@ import java.io.IOException;
 
 public class Task07 {
     public static void main(String[] args) throws IOException {
-        File file = new File("Task07.txt");
+        File file = new File("TaskDZ1.txt");
         try (FileWriter fileWriter = new FileWriter(file)) {
             String date = String.format("Name | Surname | Age\n" +
                                         "------------------\n" +
