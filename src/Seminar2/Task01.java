@@ -7,6 +7,7 @@ import java.util.Scanner;
 // состоит из чередующихся символов c1 и c2, начиная с c1.
 public class Task01 {
     public static void main(String[] args) {
+        // Первый вариант
         System.out.print("Введите число: ");
         Scanner scanner = new Scanner(System.in);
         int number = scanner.nextInt();

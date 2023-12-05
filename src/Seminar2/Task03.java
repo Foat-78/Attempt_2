@@ -6,6 +6,8 @@ import java.util.Scanner;
 // Напишите метод, который принимает на вход строку (String) и
 // определяет является ли строка палиндромом (возвращает
 // boolean значение)
+// Например: А роза упала на лапу Азора
+
 public class Task03 {
     public static void main(String[] args) {
         System.out.print("Введите строку: ");
