@@ -8,8 +8,9 @@ public class Task03_1 {
         System.out.println(polindrome("А роза упала на лапу Азора"));
     }
     public static boolean polindrome(String str){
-        StringBuilder stB = new StringBuilder(str);
-        if (stB.reverse().toString().equals(str)){
+        String st = str.toLowerCase().replaceAll(" ", "");
+        StringBuilder stB = new StringBuilder(st);
+        if (stB.reverse().toString().equals(st)){
             return true;
         }
         else {

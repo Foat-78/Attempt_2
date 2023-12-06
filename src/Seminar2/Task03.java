@@ -13,7 +13,7 @@ public class Task03 {
         System.out.print("Введите строку: ");
         Scanner scanner = new Scanner(System.in);
         String str = scanner.nextLine();
-        String[] arr = str.toLowerCase().split("");
+        String[] arr = str.toLowerCase().replaceAll(" ", "").split("");
         String[] arr1 = new String[arr.length];
         System.out.println(Arrays.toString(arr));
 
