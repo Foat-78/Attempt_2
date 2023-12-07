@@ -13,7 +13,7 @@ public class Task04 {
         int num = 100;
         String s = "Test\t";
         File file = new File("Task04.txt");
-        try (FileWriter fileWriter = new FileWriter(file)) {
+        try (FileWriter fileWriter = new FileWriter(file, false)) {
             for (int i = 0; i <= num; i++) {
                 String date = s;
                 fileWriter.write(date);
