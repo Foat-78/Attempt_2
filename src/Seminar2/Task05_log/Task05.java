@@ -17,31 +17,39 @@ public class Task05 {
     private final static String PATH = ".";
 
 
+    // Переменная LOG которая отвечает за логер.
+    // log(Task05.class.getName()) - такой способ передачи в метод является более рекомендуемой
+    // т.к. при замене названия класса Task05 метод у нас не поломается.
+    // Можно использовать так: log(Task05) - но не рекомендуется
     private static final Logger LOG = log.log(Task05.class.getName());
     public static void main(String[] args) {
 
 //        getFileNamesInDir(); // Нам распечатает какие у нас в текущей директории, директории нашего проекта есть файлы и папки
-//        System.out.println(Arrays.toString(getFileNamesInDir()));
+        System.out.println(Arrays.toString(getFileNamesInDir()));
         write();
     }
     private static void write() {
-        try (FileWriter in = new FileWriter("Task05.txt")) {
+        try (FileWriter in = new FileWriter("Task05.txt", true)) {
             String[] data = getFileNamesInDir();
             for (String s: data) {
                 in.append(s).append("\n");
             }
             System.out.println("File names in goal dir recorded!!!");
-            if (isThrow()){
-                throw new IOException("Some king of mistake");
+            if (isThrow()){ // Генерация исключении через метод isThrow()
+                throw new IOException("Some kind of mistake");
             }
         } catch (IOException e) {
            LOG.log(Level.INFO, e.getLocalizedMessage());
            e.printStackTrace();
         }
-
-
     }
-
+    /*
+    Вспомогательный метод isThrow который отображает ошибки т.е провоцирует исключение.
+    Метод возвращает тип boolean и внутри имеет переменные типа int a и b.
+    В int digit кладём значение - а и плюс рандомные число умноженное на b и
+    возвращаем число digit в случае больше 0. isThrow иногда вернёт 1 или 2 и это
+    будет ошибка, а когда 0 то ничего не вернёт.
+     */
     private static boolean isThrow(){
         int a = 0;
         int b = 2;
