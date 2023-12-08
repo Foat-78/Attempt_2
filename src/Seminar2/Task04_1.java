@@ -10,10 +10,9 @@ import java.io.IOException;
 public class Task04_1 {
     public static void main(String[] args) throws IOException {
         File file = new File("Task04_1.jason"); // Создаём новый файл и вместо аргумента указываем относительный или полный путь к файлу
-        FileWriter fileWriter = new FileWriter(file); // Для записи в файл необходимо создат  новый объект FileWriter
+        FileWriter fileWriter = new FileWriter(file); // Для записи в файл необходимо создат новый объект FileWriter
         fileWriter.write(String.valueOf(repeat("TEST ")));
         fileWriter.flush();
-
     }
     public static StringBuilder repeat(String str){
         StringBuilder stB = new StringBuilder();
@@ -22,5 +21,4 @@ public class Task04_1 {
         }
         return stB;
     }
-
 }
