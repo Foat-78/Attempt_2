@@ -25,12 +25,13 @@ public class log {
     }
 
     /*
-    Коментарии к блоку стр. 33-34
+    Коментарии к блоку стр. 33-35
     Есть еще дополнительный метод который возвращает нам стандартный Java логер, под названием log,
     который принимает строку под названием className которую нужно залогировать и возвращает стандартный Java Logger
     для класса с именем className.
      */
     public static Logger log(String className) {
+
         return Logger.getLogger(className);
     }
 }
