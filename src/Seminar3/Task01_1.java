@@ -13,6 +13,7 @@ public class Task01_1 {
         Random rn = new Random();
         sort(list, rn);
     }
+
     public static void sort(ArrayList lst, Random rnd){
         for (int i = 0; i < 10; i++) {
             lst.add(rnd.nextInt(1,10));

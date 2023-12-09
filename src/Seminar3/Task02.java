@@ -23,6 +23,7 @@ public class Task02 {
         countPlanet(planets);
     }
 
+
     private static void countPlanet(List<String> planets) {
         List<String> countPlanet = new ArrayList<>();
         StringBuilder builder = new StringBuilder();

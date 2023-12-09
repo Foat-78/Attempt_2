@@ -27,6 +27,7 @@ public class Task01 {
         System.out.println();
         isEquals(s1, s6);
     }
+
     public static void isEquals(String str, String str1){
 
         if (str == str1){

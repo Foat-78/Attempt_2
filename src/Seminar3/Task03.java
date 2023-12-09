@@ -16,7 +16,9 @@ public class Task03 {
         list.add("летн€€");
         list.add("Ёльвира");
         list.add(5);
+
         System.out.println(list);
+
         for (int i = 0; i < list.size(); i++) {
             if (list.get(i) instanceof Integer){
                 list.remove(i);

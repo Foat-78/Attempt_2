@@ -24,6 +24,7 @@ public class Task04 {
 
         System.out.println(shopBook);
     }
+
         static void addBooks(ArrayList<String> books){
         shopBook.add(books);
         }
