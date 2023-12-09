@@ -1,0 +1,34 @@
+дек. 07, 2023 2:44:43 PM Seminar2.Task05_log.Task05 main
+INFO: App running/...
+дек. 07, 2023 2:44:55 PM Seminar2.Task05_log.Task05 main
+INFO: App running/...
+дек. 07, 2023 2:45:18 PM Seminar2.Task05_log.Task05 main
+INFO: App running/...
+дек. 07, 2023 3:00:49 PM Seminar2.Task05_log.Task05 write
+INFO: Some king of mistake
+дек. 07, 2023 3:09:11 PM Seminar2.Task05_log.Task05 write
+INFO: Some king of mistake
+дек. 07, 2023 3:28:27 PM Seminar2.Task05_log.Task05 write
+INFO: Some king of mistake
+дек. 07, 2023 3:28:30 PM Seminar2.Task05_log.Task05 write
+INFO: Some king of mistake
+дек. 07, 2023 3:28:34 PM Seminar2.Task05_log.Task05 write
+INFO: Some king of mistake
+дек. 07, 2023 3:51:38 PM Seminar2.Task05_log.Task05 write
+INFO: Some king of mistake
+дек. 07, 2023 3:52:36 PM Seminar2.Task05_log.Task05 write
+INFO: Some king of mistake
+дек. 07, 2023 3:53:10 PM Seminar2.Task05_log.Task05 write
+INFO: Some king of mistake
+дек. 07, 2023 3:53:31 PM Seminar2.Task05_log.Task05 write
+INFO: Some king of mistake
+дек. 07, 2023 3:58:00 PM Seminar2.Task05_log.Task05 write
+INFO: РџСЂРѕРёР·РѕС€Р»Р° РѕС€РёР±РєР° true
+дек. 07, 2023 3:58:36 PM Seminar2.Task05_log.Task05 write
+INFO: РџСЂРѕРёР·РѕС€Р»Р° РѕС€РёР±РєР° 
+дек. 07, 2023 3:59:10 PM Seminar2.Task05_log.Task05 write
+INFO: Some king of mistake
+дек. 08, 2023 10:03:16 AM Seminar2.Task05_log.Task05 write
+INFO: Some kind of mistake
+дек. 08, 2023 11:03:36 AM Seminar2.Task05_log.Task05 write
+INFO: Some kind of mistake

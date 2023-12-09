@@ -1,0 +1,13 @@
+.editorconfig
+.git
+.gitignore
+.idea
+Attempt_2.iml
+log.0.0.txt
+log.config
+log.txt
+out
+src
+Task04_1.jason
+Task05.txt
+TaskDZ1.txt
