@@ -24,7 +24,7 @@ public class Task05 {
     private static final Logger LOG = log.log(Task05.class.getName());
     public static void main(String[] args) {
 
-//        getFileNamesInDir(); // Нам распечатает какие у нас в текущей директории, директории нашего проекта есть файлы и папки
+//        getFileNamesInDir(); // Нам распечатает какие у нас в текущей директории нашего проекта есть файлы и папки
         System.out.println(Arrays.toString(getFileNamesInDir()));
         write();
     }
