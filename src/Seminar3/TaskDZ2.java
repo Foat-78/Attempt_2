@@ -2,7 +2,7 @@ package Seminar3;
 
 import java.util.ArrayList;
 
-//Пусть дан произвольный список целых чисел, удалить из него четные числа
+//РџСѓСЃС‚СЊ РґР°РЅ РїСЂРѕРёР·РІРѕР»СЊРЅС‹Р№ СЃРїРёСЃРѕРє С†РµР»С‹С… С‡РёСЃРµР», СѓРґР°Р»РёС‚СЊ РёР· РЅРµРіРѕ С‡РµС‚РЅС‹Рµ С‡РёСЃР»Р°
 public class TaskDZ2 {
     public static void main(String[] args) {
         Integer[] arr = new Integer[]{1, 2, 3, 4, 5, 6, 7, 8, 9};

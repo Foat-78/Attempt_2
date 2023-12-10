@@ -3,18 +3,18 @@ package Seminar3;
 import java.util.ArrayList;
 import java.util.List;
 
-//Создать список типа ArrayList<String>.
-//Поместить в него как строки, так и целые числа.
-//Пройти по списку, найти и удалить целые числа.
+//РЎРѕР·РґР°С‚СЊ СЃРїРёСЃРѕРє С‚РёРїР° ArrayList<String>.
+//РџРѕРјРµСЃС‚РёС‚СЊ РІ РЅРµРіРѕ РєР°Рє СЃС‚СЂРѕРєРё, С‚Р°Рє Рё С†РµР»С‹Рµ С‡РёСЃР»Р°.
+//РџСЂРѕР№С‚Рё РїРѕ СЃРїРёСЃРєСѓ, РЅР°Р№С‚Рё Рё СѓРґР°Р»РёС‚СЊ С†РµР»С‹Рµ С‡РёСЃР»Р°.
 public class Task03 {
     public static void main(String[] args) {
 //        StringBuilder builder = new StringBuilder();
         List list = new ArrayList<String>();
-        list.add("Привет");
+        list.add("РџСЂРёРІРµС‚");
         list.add(8);
-        list.add("восьми");
-        list.add("летняя");
-        list.add("Эльвира");
+        list.add("РІРѕСЃСЊРјРё");
+        list.add("Р»РµС‚РЅСЏСЏ");
+        list.add("Р­Р»СЊРІРёСЂР°");
         list.add(5);
 
         System.out.println(list);
