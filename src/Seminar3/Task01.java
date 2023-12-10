@@ -1,6 +1,6 @@
 package Seminar3;
-//Даны следующие строки, cравнить их с помощью == и
-//метода equals() класса Object
+//Р”Р°РЅС‹ СЃР»РµРґСѓСЋС‰РёРµ СЃС‚СЂРѕРєРё, cСЂР°РІРЅРёС‚СЊ РёС… СЃ РїРѕРјРѕС‰СЊСЋ == Рё
+//РјРµС‚РѕРґР° equals() РєР»Р°СЃСЃР° Object
 //String s1 = "hello";
 //String s2 = "hello";
 //String s3 = s1;
@@ -31,14 +31,14 @@ public class Task01 {
     public static void isEquals(String str, String str1){
 
         if (str == str1){
-            System.out.println("Равны как ссылки!");
+            System.out.println("Р Р°РІРЅС‹ РєР°Рє СЃСЃС‹Р»РєРё!");
         } else if (str != str1){
-            System.out.println("Не равны как ссылки!");
+            System.out.println("РќРµ СЂР°РІРЅС‹ РєР°Рє СЃСЃС‹Р»РєРё!");
         }
         if (str.equals(str1)) {
-            System.out.println("Равны как значения!");
+            System.out.println("Р Р°РІРЅС‹ РєР°Рє Р·РЅР°С‡РµРЅРёСЏ!");
         } else if (!str.equals(str1)){
-                System.out.println("Не равны как значения!");
+                System.out.println("РќРµ СЂР°РІРЅС‹ РєР°Рє Р·РЅР°С‡РµРЅРёСЏ!");
         }
     }
 }
