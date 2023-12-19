@@ -1,10 +1,50 @@
 package Seminar5;
-//Написать программу, определяющую правильность расстановки скобок в выражении.
-//Пример 1: a+(d*3) - истина
-//Пример 2: [a+(1*3) - ложь
-//Пример 3: [6+(3*3)] - истина
-//Пример 4: {a}[+]{(d*3)} - истина
-//Пример 5: <{a}+{(d*3)}> - истина
-//Пример 6: {a+]}{(d*3)} - ложь
+
+import java.util.ArrayDeque;
+import java.util.Deque;
+import java.util.Map;
+
+//РќР°РїРёСЃР°С‚СЊ РїСЂРѕРіСЂР°РјРјСѓ, РѕРїСЂРµРґРµР»СЏСЋС‰СѓСЋ РїСЂР°РІРёР»СЊРЅРѕСЃС‚СЊ СЂР°СЃСЃС‚Р°РЅРѕРІРєРё СЃРєРѕР±РѕРє РІ РІС‹СЂР°Р¶РµРЅРёРё.
+//РџСЂРёРјРµСЂ 1: a+(d*3) - РёСЃС‚РёРЅР°
+//РџСЂРёРјРµСЂ 2: [a+(1*3) - Р»РѕР¶СЊ
+//РџСЂРёРјРµСЂ 3: [6+(3*3)] - РёСЃС‚РёРЅР°
+//РџСЂРёРјРµСЂ 4: {a}[+]{(d*3)} - РёСЃС‚РёРЅР°
+//РџСЂРёРјРµСЂ 5: <{a}+{(d*3)}> - РёСЃС‚РёРЅР°
+//РџСЂРёРјРµСЂ 6: {a+]}{(d*3)} - Р»РѕР¶СЊ
 public class Task02 {
+    static Map<Character, Character> openCloseBrackets = Map.of('{', '}', '[', ']', '(', ')', '<', '>');
+
+    public static void main(String[] args) {
+        String s1 = "a+(d*3)";
+        String s2 = "[a+(1*3)";
+        String s3 = "[6+(3*3)]";
+        String s4 = "{a}[+]{(d*3)}";
+        String s5 = "<{a}+{(d*3)}>";
+        String s6 = "{a+]}{(d*3)}";
+        System.out.println(valid(s1) + " = РёСЃС‚РёРЅР°");
+        System.out.println(valid(s2) + " = Р»РѕР¶СЊ");
+        System.out.println(valid(s3) + " = РёСЃС‚РёРЅР°");
+        System.out.println(valid(s4) + " = РёСЃС‚РёРЅР°");
+        System.out.println(valid(s5) + " = РёСЃС‚РёРЅР°");
+        System.out.println(valid(s6) + " = Р»РѕР¶СЊ");
+    }
+
+    public static boolean valid(String massege) {
+        Deque<Character> openBrackets = new ArrayDeque<>();
+        for (Character symbole : massege.toCharArray()) {
+            if (openCloseBrackets.containsKey(symbole)) {
+                openBrackets.add(symbole);
+            } else if (openCloseBrackets.containsValue(symbole)) {
+                if (openBrackets.isEmpty()) {
+                    return false;
+                }
+                char top = openBrackets.removeLast();
+                if (openCloseBrackets.get(top) != symbole) {
+                    return false;
+                }
+            }
+        }
+        return openBrackets.isEmpty();
+    }
 }
+
