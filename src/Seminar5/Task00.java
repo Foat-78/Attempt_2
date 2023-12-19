@@ -31,7 +31,8 @@ public class Task00 {
         System.out.println(name);
 
         for (Map.Entry<Integer, String> entry : name.entrySet()) {
-            if (entry.getValue().equals("Фоат")) {
+//            if (entry.getValue().equals("Фоат")) { // Вывод по значению
+            if (entry.getKey().equals(1978)) { // Вывод по ключу
                 System.out.println("kay: " + entry.getKey() + ",  value: " + entry.getValue());
             }
         }
