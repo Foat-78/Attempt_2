@@ -26,10 +26,13 @@ package Seminar5.TaskDZ1;
 //{Bob=[789012], Alice=[123456, 789012]}
 //[]
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Map;
+
 
 public class PhoneBook {
-    private static HashMap<String, ArrayList<Integer>> phoneBook = new HashMap<>();
+    public static HashMap<String, ArrayList<Integer>> phoneBook = new HashMap<>();
     public void add(String name, Integer phoneNum) {
       phoneBook.putIfAbsent(name,new ArrayList<>());
       phoneBook.get(name).add(phoneNum);
