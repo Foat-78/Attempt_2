@@ -1,5 +1,7 @@
 package Seminar5.TaskDZ1;
 
+import Seminar5.TaskDZ1.PhoneBook;
+
 public class Printer {
     public static void main(String[] args) {
         String name1;
