@@ -1,4 +1,4 @@
-package Seminar4;
+package Seminar4.Stack04;
 //Реализовать стэк с помощью массива.
 //Нужно реализовать методы:
 //size(), empty(), push(), peek(), pop().

@@ -1,4 +1,4 @@
-package Seminar4;
+package Seminar4.Stack04;
 
 public class MyStackMain04 {
     public static void main(String[] args) {
