@@ -1,7 +1,5 @@
 package Seminar6.DZ1;
 
-
-
 import java.util.*;
 
 public class main {
@@ -39,7 +37,7 @@ public class main {
         int ddr = sc.nextInt();
         System.out.println("Товары подходящие по вашему запросу: ");
         int count1 = 1;
-        for (Product prod: laptops) {
+        for (Product prod : laptops) {
             if (prod.getSsd() >= ssd && prod.getDdr() >= ddr) {
                 System.out.printf("%d -> %s;\n", count1++, prod);
             }

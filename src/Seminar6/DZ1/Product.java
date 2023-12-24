@@ -5,7 +5,6 @@ import java.util.HashSet;
 import java.util.Set;
 
 public class Product {
-
     public String brend;
     public Integer price;
     private String os;
@@ -13,7 +12,7 @@ public class Product {
     private double ddr;
     private String color;
 
-     public Product(String brend, Integer price, String os, double ssd, double ddr, String color) {
+    public Product(String brend, Integer price, String os, double ssd, double ddr, String color) {
         this.brend = brend;
         this.price = price;
         this.os = os;
@@ -21,9 +20,11 @@ public class Product {
         this.ddr = ddr;
         this.color = color;
     }
+
     public String getBrend() {
         return brend;
     }
+
     public void setBrend(String brend) {
         this.brend = brend;
     }
@@ -38,7 +39,7 @@ public class Product {
 
     @Override
     public String toString() {
-        return  "brend='" + brend + '\'' +
+        return "brend='" + brend + '\'' +
                 ", price=" + price +
                 ", os='" + os + '\'' +
                 ", ssd=" + ssd +
